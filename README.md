@@ -11,13 +11,13 @@ Distributed process monitoring system for C programming exam preparation.
        │ fork() + pipes
        ├─────────────┬─────────────┬──────────────┐
        │             │             │              │
-   ┌───▼────┐   ┌───▼────┐   ┌───▼────┐         │
-   │Worker 1│   │Worker 2│   │Worker 3│         │
-   │  (CPU) │   │ (MEM)  │   │ (PROC) │         │
-   └───┬────┘   └───┬────┘   └───┬────┘         │
-       │            │            │               │
-       │ sockets    │ sockets    │ sockets      │
-       └────────────┴────────────┴───────────────┘
+   ┌───▼────┐   ┌───▼────┐   ┌───▼────┐           │
+   │Worker 1│   │Worker 2│   │Worker 3│           │
+   │  (CPU) │   │ (MEM)  │   │ (PROC) │           │
+   └───┬────┘   └───┬────┘   └───┬────┘           │
+       │            │            │                │
+       │ sockets    │ sockets    │ sockets        │
+       └────────────┴────────────┴────────────── ─┘
                      │
                 ┌────▼────┐
                 │ Server  │  (receives data via TCP)
